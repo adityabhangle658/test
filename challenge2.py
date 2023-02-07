@@ -63,7 +63,7 @@ getAttributeValue()
 
 
 # ------------------------------------------------------------------------------------------------------------------------------------------ 
-# Output 1: 
+# Output 1:
     # python challenge2.py
     # Get AWS Instance attributes
     # Enter 1 for all attributes, 2 for specific attributes (bonus question):
@@ -71,7 +71,7 @@ getAttributeValue()
     # Enter AWS instance ID: i-xxxxxxxxxxxxxx
     # {'Reservations': [{'Groups': [], 'Instances': [{'AmiLaunchIndex': 0, 'ImageId': 'ami-0cca134ecxxxxxx', 'InstanceId': 'i-xxxxxxxxxxxxxx', 'InstanceType': 't2.large', 'KeyName': 'xxxxxxxxxxxxxx', 'LaunchTime': datetime.datetime(2022, 12, 26, 6, 29, 55, tzinfo=tzlocal()), 'Monitoring': {'State': 'disabled'}, 'Placement': {'AvailabilityZone': 'ap-south-1a', 'GroupName': '', 'Tenancy': 'default'}, 'PrivateDnsName': 'ip-x-x-x-x.ap-south-1.compute.internal', 'PrivateIpAddress': 'x.x.x.x', 'ProductCodes': [], 'PublicDnsNnsAAAARecord': False}, 'MaintenanceOptions': {'AutoRecovery': 'default'}}], 'OwnerId': 'xxxxxxxxxxxxxx', 'ReservationId': 'r-xxxxxxxxxxxxxx'}], 'ResponseMetadata': {'RequestId': 'xxxxxxxxxxxxxx', 'HTTPStatusCode': 200, 'HTTPHeaders': {'x-amzn-requestid': 'xxxxxxxxxxxxxx', 'cache-control': 'no-cache, no-store', 'strict-transport-security': 'max-age=31536000; includeSubDomains', 'vary': 'accept-encoding', 'content-type': 'text/xml;charset=UTF-8', 'content-length': '7934', 'date': 'Mon, 06 Feb 2023 19:05:16 GMT', 'server': 'AmazonEC2'}, 'RetryAttempts': 0}}
 
-# Output 2: 
+# Output 2:
     # python challenge2.py
     # Get AWS Instance attributes
     # Enter 1 for all instance attributes, 2 for specific attributes or metadata:
@@ -83,13 +83,13 @@ getAttributeValue()
 
 # ------------------------------------------------------------------------------------------------------------------------------------------ 
 # ------------------------------------------------------------------------------------------------------------------------------------------ 
-# Solution 2 
+# Solution 2
 
-# Can also achieve this using bash and aws cli commands 
+# Can also achieve this using bash and aws cli commands
 #   aws ec2 describe-instance-attribute --instance-id <instance_id> --region <region_name> --attribute <attributeType>
 
 # ------------------------------------------------------------------------------------------------------------------------------------------ 
-# Output 1: 
+# Output 1:
     # aws ec2 describe-instance-attribute --instance-id <instance_id> --region <region_name> --attribute instanceType
     # {
     #     "InstanceId": "i-xxxxxxxxxxxxx",
@@ -98,7 +98,7 @@ getAttributeValue()
     #     }
     # }
 
-# # Output 2: 
+# # Output 2:
     # aws ec2 describe-instance-attribute --instance-id <instance_id> --region <region_name> --attribute rootDeviceName
     # {
     #     "InstanceId": "i-xxxxxxxxxxxxx",

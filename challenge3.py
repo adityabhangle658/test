@@ -10,11 +10,11 @@
 # Input 2 - Enter key path    - Example - a/b/c
 # Input 3 - Delimiter         - Example - /
 
-# Output Example 1 - user_input of (a).(b).(c) = d (final output) 
-# Output Example 2 - user_input of (a).(b).(c) = d (final output) 
+# Output Example 1 - user_input of (a).(b).(c) = d (final output)
+# Output Example 2 - user_input of (a).(b).(c) = d (final output)
 
 # ------------------------------------------------------------------------------------------------------------------------------------------ 
-# Code 
+# Code
 
 import json
 

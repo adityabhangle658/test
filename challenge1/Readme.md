@@ -1,4 +1,4 @@
-In this challenge, I create the following 
+In this challenge, I create the following for 3 tier architecture
 
 1. Networking for web layer - vpc (common), subnets, route tables, security groups
 2. Networking for app layer - vpc (common), subnets, route tables, security groups

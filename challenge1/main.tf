@@ -55,7 +55,7 @@ module "rds" {
   allocated_storage      = 5
   engine                 = "postgres"
   engine_version         = "14.1"
-  username               = "edu"
+  username               = "adi658"
   vpc_security_group_ids = [module.network.db-sg]
   publicly_accessible    = false
   skip_final_snapshot    = true
